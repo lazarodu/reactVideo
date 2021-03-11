@@ -1,0 +1,7 @@
+export { default as Login } from "./Login"
+export { default as Main } from "./Main"
+export { default as Cadastro } from "./Cadastro"
+export { default as Curso } from "./Curso"
+export { default as CursoStore } from "./Curso/store"
+export { default as Aluno } from "./Aluno"
+export { default as AlunoStore } from "./Aluno/store"
