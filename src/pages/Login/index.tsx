@@ -45,7 +45,7 @@ export default function Home() {
           <FaHome
             size={30}
             onClick={() =>
-              (window.location.href = "https://nextjs-lilac-pi-95.vercel.app/")
+              (window.location.href = "https://nextjs-lazarodu.vercel.app")
             }
           />
           <S.Form onSubmit={handleSubmit(handleLogin)}>
