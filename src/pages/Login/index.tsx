@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
+import { FaHome } from "react-icons/fa";
 import { useAuth } from "hooks/auth";
 
 import { Loading } from "components";
@@ -41,6 +42,12 @@ export default function Home() {
         <Loading />
       ) : (
         <div className="container">
+          <FaHome
+            size={30}
+            onClick={() =>
+              (window.location.href = "https://nextjs-lilac-pi-95.vercel.app/")
+            }
+          />
           <S.Form onSubmit={handleSubmit(handleLogin)}>
             <S.BoxLogin>
               <S.BoxInput>
