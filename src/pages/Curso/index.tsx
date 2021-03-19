@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import { Loading } from "components";
-import { FaPlusCircle, FaPencilAlt } from "react-icons/fa";
+import { FaPlusCircle, FaPencilAlt, FaTrashAlt } from "react-icons/fa";
 import { apiCurso } from "api/data";
 import { ICurso } from "interfaces/Curso.interface";
 import { toast } from "react-toastify";
@@ -84,7 +84,7 @@ const Curso = () => {
                         bgColor="danger"
                         onClick={() => handleDelete(item.id)}
                       >
-                        <FaPencilAlt />
+                        <FaTrashAlt />
                       </Button>
                     </td>
                   </tr>
